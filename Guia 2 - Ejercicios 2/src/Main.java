@@ -70,22 +70,22 @@ public class Main {
 		    		    
 		    		    
 		    		    
-		    		  case 2:
+		    case 2:
 		    			 
-		    			    float l2,r,as,areaci,diag,areacu;
+		    			float l2,r,as,areaci,diag,areacu;
 		    				
-		    				System.out.println("Ingrese el valor del radio de la figura");
-		    		        r = tec.nextFloat();
+		    		    System.out.println("Ingrese el valor del radio de la figura");
+		    		    r = tec.nextFloat();
 		    		        
-		    		        diag=r*2;
-		    		        l2=(float) Math.sqrt(Math.pow(diag,2)/2);
+		    		    diag=r*2;
+		    		    l2=(float) Math.sqrt(Math.pow(diag,2)/2);
 		    		        
-		    		        areaci=(float) (Math.PI*(Math.pow(r,2)));
-		    		        areacu=l2*l2;
-		    		        as=areaci-areacu;
+		    		    areaci=(float) (Math.PI*(Math.pow(r,2)));
+		    		    areacu=l2*l2;
+		    		    as=areaci-areacu;
 		    		        		
-		    		        System.out.println("El lado del cuadrado es = "+l2);
-		    		        System.out.println("El area sombreada es = "+as);
+		    		    System.out.println("El lado del cuadrado es = "+l2);
+		    		    System.out.println("El area sombreada es = "+as);
 		    		        
 		    		        break;
 		    		        
@@ -93,200 +93,203 @@ public class Main {
 		    		        
 		    		        
 		    		        
-		    		  case 3: 
+		   case 3: 
 		    			   
 
-		    				int n;
-		    				double p3,viajes,pasaje,pasajet,propietario,propietariot;
+		    	       int n;
+		    		   double p3,viajes,pasaje,pasajet,propietario,propietariot;
 		    				
-		    				pasaje = 10000;
-		    				propietario = 2000;
+		    		   pasaje = 10000;
+		    		   propietario = 2000;
 		    				
-		    				System.out.println("ingrese la capacidad maxima de pasajeros");
-		    				n = tec.nextInt();
+		    		   System.out.println("ingrese la capacidad maxima de pasajeros");
+		    		   n = tec.nextInt();
 		    				
-		    				System.out.println("Ingrese número de personas a transportar");
-		    				p3 = tec.nextInt();
+		    		   System.out.println("Ingrese número de personas a transportar");
+		    		   p3 = tec.nextInt();
 		    				
-		    				if(n>=p3) {
-		    					viajes = 1;
-		    				}else {
-		    					//se aproxima el resultado al valor siguiente.
-		    					viajes =Math.ceil(p3/n);
+		    		   if(n>=p3) {
+		    
+		    			  viajes = 1;
+		    			  
+		    		   }else {
+		    			   
+		    			 //se aproxima el resultado al valor siguiente.
+		    			  viajes =Math.ceil(p3/n);
 		    					
 		    				}
 		    		         
-		    				    pasajet=pasaje*p3;
-		    				    propietariot= propietario * viajes;
-		    				    
-		    				System.out.println("Total de viajes a realizar ="+viajes);
-		    				System.out.println("Total pago de pasajeros = "+ pasajet);
-		    				System.out.println("Total a pagar al propietario ="+ propietariot);
+		    			  pasajet=pasaje*p3;
+		    		      propietariot= propietario * viajes;
+		    				   
+		    		  System.out.println("Total de viajes a realizar ="+viajes);
+		    		  System.out.println("Total pago de pasajeros = "+ pasajet);
+		    		  System.out.println("Total a pagar al propietario ="+ propietariot);
 		    			  
-		    			   break;
+		    		  break;
 		    			   
 		    			   
 		    			   
 		    			   
-		    		  case 4:
+		    case 4:
 		    			     
-		    				int v,pb,imp;	
+		    		 int v,pb,imp;	
 		    				
-		    				do {
-		    				System.out.println(" Ingrese el tipo de Vehiculo");
-		    				System.out.println("1 - Camioneta");
-		    				System.out.println("2 - Automovil");
-		    				v = tec.nextInt();
-		    				}while (v>2);
+		    		do {
+		    			System.out.println(" Ingrese el tipo de Vehiculo");
+		    			System.out.println("1 - Camioneta");
+		    			System.out.println("2 - Automovil");
+		    			v = tec.nextInt();
+		    			}while (v>2);
 		    				
-		    				System.out.println("Ingrese precio bruto");
-		    				pb = tec.nextInt();
+		    			System.out.println("Ingrese precio bruto");
+		    			pb = tec.nextInt();
 		    				
-		    				if(v==1) {
+		    		if(v==1){
 		    					
-		    					if(pb<80) {
+		    		  if(pb<80) {
 		    						
-		    						System.out.println("Valor de Impuesto = 0");
-		    						System.out.println("Precio neto = "+pb);
+		    		     System.out.println("Valor de Impuesto = 0");
+		    			 System.out.println("Precio neto = "+pb);
 		    						
-		    					}else {
+		    		  }else {
 		    						
-		    						imp = pb/2;
-		    						System.out.println("Valor de Impuesto = "+imp);
-		    						System.out.println("Precio neto ="+(pb+imp));
-		    					}
+		    			 imp = pb/2;
+		    			 System.out.println("Valor de Impuesto = "+imp);
+		    			 System.out.println("Precio neto ="+(pb+imp));
+		    					}		
 		    					
+		    		}else {
 		    					
-		    				}else {
-		    					
-		    					if(pb < 20) {
+		    		if(pb < 20) {
 		    					    
-		    						System.out.println("Valor de impuesto = 5");
-		    					    System.out.println("Precio neto = "+(pb+5));
+		    		   System.out.println("Valor de impuesto = 5");
+		    		   System.out.println("Precio neto = "+(pb+5));
 		    						
-		    					}else if(pb>=20 && pb<40) {
+		    		 } 
+		    		 if(pb>=20 && pb<40) {
 		    						
-		    						imp = pb/5;
-		    						System.out.println("Valor impuesto = "+imp);
-		    						System.out.println("Precio neto = "+(pb+imp));
+		    		   imp = pb/5;
+		    		   System.out.println("Valor impuesto = "+imp);
+		    		   System.out.println("Precio neto = "+(pb+imp));
 		    						
-		    					}else {
-		    						
-		    						System.out.println("Valor impuesto = 9");
-		    						System.out.println("Precio neto = "+(pb+9));
+		    		 }else {
+		    		 				
+		    			System.out.println("Valor impuesto = 9");
+		    		    System.out.println("Precio neto = "+(pb+9));
 		    					 }  			  
 		   		              }
-		    				break;
+		    			break;
 		    				
 		    				
 		    				
 		    				
-		    		  case 5:
+		    case 5:
 		    		        
-		    			  int opc5,tc,totalnov=0,totalv=0;
-		    				float total=0;
-		    				do {
-		    				  do {
-		    					System.out.println("Ingrese el numero correspondiente al tipo de comida a elegir");
-		    					System.out.println("1 - Vegetariana");
-		    					System.out.println("2 - No Vegetariana");
-		    					System.out.println("3 - Rapida");
-		    					opc5 = tec.nextInt();
-		    				  }while(opc5>3);
-		    					switch (opc5) {
+		    		int opc5,tc,totalnov=0,totalv=0;
+		    		float total=0;
+		    		do {
+		    		 do {
+		    			System.out.println("Ingrese el numero correspondiente al tipo de comida a elegir");
+		    			System.out.println("1 - Vegetariana");
+		    			System.out.println("2 - No Vegetariana");
+		    			System.out.println("3 - Rapida");
+		    			opc5 = tec.nextInt();
+		    			}while(opc5>3);
+		    		 
+		    	  switch (opc5) {
 		    					
 		    					
-		    					 case 1 :
+		    	 case 1 :
 		    						
-		    					do { 
-		    					  System.out.println("Comida Vegetariana = ");
-		    					  System.out.println("1 - Sopas vegetales = 10,000");
-		    					  System.out.println("2 - Ensalada = 25,000");
-		    					  System.out.println("3 - Jugo = 5,000");
-		    					  tc = tec.nextInt();
-		    					}while(tc>3);
+		    		do { 
+		    		    System.out.println("Comida Vegetariana = ");
+		    		    System.out.println("1 - Sopas vegetales = 10,000");
+		    			System.out.println("2 - Ensalada = 25,000");
+		    			System.out.println("3 - Jugo = 5,000");
+		    			tc = tec.nextInt();
+		    			}while(tc>3);
 		    					
-		    					  if(tc==1) {
+		    		if(tc==1) {
 		    						  
-		    						  totalv=totalv +10000;
+		    			totalv=totalv +10000;
 		    						  
-		    					  }else if(tc==2) {
+		    		}else if(tc==2) {
 		    						  
-		    						  totalv = totalv+25000;
+		    			totalv = totalv+25000;
 		    						  
-		    					  }else if(tc==3) {
+		    		 }else if(tc==3) {
 		    						  
-		    						  totalv = totalv + 5000;
-		    					  }
-		    						break;
+		    		    totalv = totalv + 5000;
+		    		}
+		    		break;
 		    						
 		    						
-		    					 case 2:
+		    	case 2:
 		    						 
-		    						 do {
-		    						  System.out.println("Comida No Vegetariana = ");
-		    						  System.out.println("1 - Bandeja de Carne = 30,000");
-		    						  System.out.println("2 - Bandeja de Pollo = 28,000");
-		    						  tc = tec.nextInt();
-		    						 }while(tc>3);
+		    		 do {
+		    			System.out.println("Comida No Vegetariana = ");
+		    			System.out.println("1 - Bandeja de Carne = 30,000");
+		    			System.out.println("2 - Bandeja de Pollo = 28,000");
+		    			tc = tec.nextInt();
+		    			}while(tc>3);
 		    						 
-		    						  if(tc==1) {
+		    		if(tc==1){
 		    							  
-		    							  totalnov=totalnov +30000;
+		    		  totalnov=totalnov +30000;
 		    							  
-		    						  }else if(tc==2) {
+		    	   }else if(tc==2) {
 		    							  
-		    							  totalnov = totalnov+28000;
+		    		 totalnov = totalnov+28000;
 		    							  
-		    						  }
-		    							break;	 
+		    		}
+		    		break;	 
 		    						
 		    							
-		    					 case 3: 
+		    	 case 3: 
 		    						 
-		    						 do {
-		    						  System.out.println("Comida Rapida = ");
-		    						  System.out.println("1 - Perro Caliente = 5000");
-		    						  System.out.println("2 - Hamburguesa = 7000");
-		    						  tc = tec.nextInt();
-		    						 }while(tc>3);
-		    						  if(tc==1) {
+		    		 do {
+		    		    System.out.println("Comida Rapida = ");
+		    		    System.out.println("1 - Perro Caliente = 5000");
+		    			System.out.println("2 - Hamburguesa = 7000");
+		    			tc = tec.nextInt();
+		    			}while(tc>3);
+		    		if(tc==1) {
 		    							  
-		    							  totalnov=totalnov +5000;
+		    			 totalnov=totalnov +5000;
 		    							  
-		    						  }else if(tc==2) {
+		    		}else if(tc==2) {
 		    							  
-		    							  totalnov = totalnov+7000;
+		    			 totalnov = totalnov+7000;
 		    							  
-		    						  }
-		    							break;	 
-		    							
-		  
-		    					}
-		    				     System.out.println("Desea agregar algo mas?");
-		    				     System.out.println("0 = Si");
-		    				     System.out.println("1 = No");
-		    				     opc5 = tec.nextInt();
+		    	   }
+		    		break;	 
+		    			
+		    	   }
+		    	        System.out.println("Desea agregar algo mas?");
+		    			System.out.println("0 = Si");
+		    		    System.out.println("1 = No");
+		    		    opc5 = tec.nextInt();
 		    				
-		    				    }while(opc5==0);
+		    	   }while(opc5==0);
 		    		        		
-		    				     //El descuento del 20% se hara cuando en la compra se halle un plato vegetariano.
-		    				     //El descuento del 10% se hará cuando en la compra se no se encuentre un plato vegetariano.
+		    	   //El descuento del 20% se hara cuando en la compra se halle un plato vegetariano.
+		    	 //El descuento del 10% se hará cuando en la compra se no se encuentre un plato vegetariano.
 		    				
-		    		            if(totalv>0) {
+		    		 if(totalv>0) {
 		    					
-		    					   total=totalv+totalnov;
-		    					   total=total+(total*0.19f);
-		    					   total = total-(total*0.20f);
+		    			total=totalv+totalnov;
+		    		    total=total+(total*0.19f);
+		    		    total = total-(total*0.20f);
 		    					
-		    				    }else {
+		    	  }else {
 		    					
-		    					   total=totalnov;
-		    					   total=total+(total*0.19f);
-		    					   total = total-(total*0.10f);
-		    			      	}
+		    			total=totalnov;
+		    			total=total+(total*0.19f);
+		    		    total = total-(total*0.10f);
+		    			}
 
-		    		             System.out.println("Total a pagar = "+total);
+		    	        System.out.println("Total a pagar = "+total);
 
 		              break;
 		}
